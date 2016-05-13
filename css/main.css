@@ -1,0 +1,304 @@
+/* Universal ---------------------*/
+
+#body{
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  background-color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+p{
+  font-size: 16px;
+}
+
+#banner{
+  background: url('../img/background-min.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#banner-overlay{
+  background-color: rgba(25, 25, 25, .50);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.greeting {
+  margin: 0 auto;
+}
+
+.btn-blue{
+  background-color: #597eaa;
+  margin: 0 20px;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn-blue:hover{
+  background-color: #354C66;
+}
+
+.blue{
+  color: #597eaa;
+}
+
+.bottom-spacing{
+  margin-bottom: 20px;
+}
+
+.bottom-spacing-medium{
+  margin-bottom: 40px;
+}
+
+.banner-block{
+  padding: 80px 0 120px;
+}
+
+.banner-block-text{
+  font-size: 1.5em;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.serif{
+  font-family: 'Bitter', serif;
+}
+
+/* Navigation ---------------------*/
+
+#navigation{
+  padding-top: 20px;
+}
+
+#navigation a{
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Bitter', serif;
+}
+
+#navigation a:hover{
+  background-color: #597eaa;
+}
+
+.navigation{
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation li:hover{
+  background-color: #597eaa;
+}
+
+.navigation li{
+  list-style: none;
+  display: inline;
+}
+
+.navigation li a{
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/* Home Page ---------------------*/
+
+#landing-page{
+  text-align: center;
+}
+
+#banner{
+  color: white;
+  display: inline-block;
+}
+
+#banner h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+}
+
+#hello{
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+#banner-btn{
+  padding: 0;
+}
+
+#banner-btn a{
+  color: white;
+}
+
+#banner-btn li:hover{
+  color: #ccc;
+}
+
+#philosophy{
+  background-color: #333;
+  color: white;
+}
+
+#philosophy,
+#what-i-do{
+  padding: 60px 0 80px;
+}
+
+#what-i-do{
+  background-color: #ccc;
+}
+
+#contact-form{
+  background-color: #ccc;
+}
+
+#projects{
+  background-color: #fafafa;
+  margin: 0;
+  padding: 80px 0;
+}
+
+.section-header{
+  color: white;
+  background-color: #333;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.project-section-header{
+  border-bottom: 2px solid #597eaa;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.project{
+  margin-bottom: 40px;
+}
+
+#body .project a {
+  text-decoration: none;
+}
+
+#body .project a:hover{
+  outline-color: #333;
+  margin-bottom: 18px;
+}
+
+.caption {
+  min-height: 250px;
+}
+
+/* Footer ----------------------*/
+
+#contact{
+  background-color: #333;
+  padding: 20px 0;
+}
+
+#contact h2{
+  color: #fafafa;
+}
+
+#contact a:hover{
+  text-decoration: none;
+}
+
+#phone-number{
+  border-right: 2px solid #597eaa;
+}
+
+.contact-item{
+  padding: 0 10px;
+}
+
+.social-icon{
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  padding: 5px;
+  background-color: rgba(200, 200, 200, .5);
+  vertical-align: top;
+  border-radius: 5px;
+  transition: width .2s, height .2s;
+}
+
+#back-to-top a{
+  color: white;
+}
+
+@media screen and (min-width: 560px){
+  #banner{
+    height: 100vh;
+  }
+
+  #nav-items{
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  #banner{
+    width: 100%;
+  }
+
+  #banner-overlay{
+    background-color: rgba(25, 25, 25, .50);
+    height: 100vh;
+    width: 100%;
+  }
+
+  #background{
+    background: url('../img/background.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 767px){
+  #philosophy,
+  #what-i-do{
+    padding: 200px 0 260px;
+  }
+
+  .btn-blue{
+    padding: 15px 30px;
+  }
+
+  #banner-overlay{
+    background-color: rgba(25, 25, 25, .50);
+  }
+
+  #background{
+    background-attachment: fixed;
+  }
+
+  #background-overlay{
+    background: none;
+  }
+}
+
+@media screen and (min-width: 1140px){
+  #banner-overlay{
+  }
+
+  #hello{
+    font-size: 3em;
+  }
+
+  #banner h3{
+    font-size: 1.72em;
+  }
+}

@@ -39,6 +39,7 @@
 
 .frame-1 {
   background-image: url('/img/Totoro_with_background.svg');
+  background-position: left;
 }
 
 .frame-1 .frame--text {
@@ -47,6 +48,7 @@
 
 .frame-2 {
   background-image: url('/img/Totoro_raining.svg');
+  background-position: right;
 }
 
 .frame-2 .frame--text {
@@ -55,8 +57,30 @@
 
 .frame-3 {
   background-image: url('/img/Totoro_raining_smiling.svg');
+  background-position: right;
 }
 
 .frame-3 .frame--text {
   float: left;
+}
+
+@media (max-width: 480px) {
+  .frame {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
+
+  .frame-1 .frame--text {
+    float: left;
+    width: 100%;
+  }
+
+  .frame-2 .frame--text,
+  .frame-3 .frame--text {
+    float: right;
+    width: 80%;
+  }
 }

@@ -397,11 +397,11 @@ a:visited {
 /* Literal.Number.Integer.Long */
 .frame h1 {
   font-size: 2em;
-  color: #ffffff;
+  color: #333;
   letter-spacing: 1px; }
 
 .frame h2 {
-  color: #fefefe;
+  color: #444;
   font-size: 2em; }
 
 .frame {
@@ -456,6 +456,8 @@ a:visited {
     -ms-flex-align: end;
         align-items: flex-end;
     padding-bottom: 20px; }
+  .frame--text h1 {
+    font-size: 3em; }
   .frame-1 .frame--text {
     float: left;
     width: 100%; }

@@ -395,13 +395,59 @@ a:visited {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
-.greeting h1 {
+.frame h1 {
   font-size: 2em;
   color: #ffffff;
   letter-spacing: 1px; }
 
-.greeting p {
-  color: #fefefe; }
+.frame h2 {
+  color: #fefefe;
+  font-size: 2em; }
+
+.frame {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 10px solid #333; }
+
+.frame--wrapper {
+  padding: 0 10%;
+  width: 100%; }
+
+.frame--text {
+  display: inline-block;
+  width: 50%; }
+
+.frame--text h1 {
+  font-size: 4em;
+  margin-bottom: 10px; }
+
+.frame-1 {
+  background-image: url("/img/Totoro_with_background.svg"); }
+
+.frame-1 .frame--text {
+  float: right; }
+
+.frame-2 {
+  background-image: url("/img/Totoro_raining.svg"); }
+
+.frame-2 .frame--text {
+  float: left; }
+
+.frame-3 {
+  background-image: url("/img/Totoro_raining_smiling.svg"); }
+
+.frame-3 .frame--text {
+  float: left; }
+
+* {
+  box-sizing: border-box; }
 
 body {
   background: white;
@@ -417,3 +463,8 @@ h1, h2, h3, h4, h5, h6 {
 img {
   display: block;
   border: 0; }
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block; }
